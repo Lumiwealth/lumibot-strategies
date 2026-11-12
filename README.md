@@ -14,6 +14,8 @@ A collection of trading strategies for [Lumibot](https://github.com/Lumiwealth/l
 | [Options Strangle](strategies/options_strangle.py) | Options | Short strangle strategy for premium collection |
 | [Drift Rebalancer](strategies/drift_rebalancer.py) | Multi-Asset | Rebalance portfolio when drift exceeds threshold |
 
+| [Weekly Investor Views via vidIQ](strategies/weekly_investor_views_vidiq/) | Stocks + ETFs | Weekly AI research and a sole trader; supported leveraged ETFs and explicit risk limits |
+
 ## Quick Start
 
 ```bash

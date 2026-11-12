@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "weekly-review",
+      "status": "active",
+      "title": "Monday investor review",
+      "raw_quote": "Once a week, let's research what these guys are saying. Let's say Monday, every Monday, research VidIQ, go through all the stuff, and then run a portfolio based on what these investors are saying.",
+      "interpretation": "Run the researcher and sole trader on each open Monday at or after 10:00 America/New_York. No AI calls or new discretionary reviews on other weekdays; a closed-market Monday is skipped until the next Monday. Persist attempts separately from completed execution. A failed/incomplete Monday attempt may resume that Monday. A pending execution continuation reuses that Monday's dated research and original intent, reconciles exact order IDs, and does not create another discretionary review. A concrete blocked result stops polling for the week without claiming full investment or execution completion. A finished model call is not a completed rebalance.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-29",
+        "context": "Weekly vidIQ investor-view strategy build"
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Initial strategy-scoped interpretation; risk and execution defaults explicitly disclosed."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Align saved policy and prompts; separate attempts, pending execution and verified completion without Python investment decisions."
+        }
+      ]
+    },
+    {
+      "id": "vidiq-evidence",
+      "status": "active",
+      "title": "Real vidIQ and complete transcripts",
+      "raw_quote": "we want this AI-powered strategy to use exactly VidIQ and do this kind of search",
+      "interpretation": "Use the genuine vidIQ YouTube search and transcript tools with a 30-day lookback for the named leading-investor roster. Review complete captions before content use; retain dates, languages, coverage and timestamped paraphrases. Titles/snippets are discovery only. State exact unavailable results; do not replace vidIQ with ordinary search, buy credits or fabricate reviewed evidence. Bound weekly work to 8 search attempts, including schema-rejected or failed attempts, of at most 3 results each and 3 newly retrieved complete transcripts across the entire Monday cycle, including continuations. Check balance first; normally use at most 55 existing provider credits. Reuse compatible prior reviewed evidence with its original retrieval date instead of repeating completed discovery. Plan at most six initial individual-investor queries and reserve two attempts for corrections; never combine investors with AND/OR. Count actual invocations, including all failed, schema-rejected and repeated calls; report the actual count even if a limit is exceeded. Return a structured ready/unavailable evidence packet and actual search/caption counts. Ready means usable reviewed attributable evidence exists; a disclosed failure of another source does not invalidate it. Unavailable means no usable reviewed evidence, not a missing perfect archive. Use exact returned video IDs. Search and caption counts reset for each new context.week. Prior-week invocations do not count against the new Monday. Same-Monday continuations reuse the usable packet without new discovery; carry original dates and gaps forward. On a new Monday, perform current-window vidIQ discovery within the existing budget and recompute the moving 30-day publication window for cached evidence. Older material may explain an existing holding only as explicitly dated background, never current qualifying research; reuse captions when compatible. A prior packet alone does not establish a fresh weekly search.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-29",
+        "context": "Weekly vidIQ investor-view strategy build"
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Initial strategy-scoped interpretation; risk and execution defaults explicitly disclosed."
+        },
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Clarify the existing eight-call bound counts failed attempts and required-field validation too; preserve actual vidIQ and full-available-caption evidence."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Align saved policy and prompts; separate attempts, pending execution and verified completion without Python investment decisions."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Repair observed historical-run failures: optional source gaps, actual attempt counting, premature cash-completion claim and researcher/trader ownership."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Actual October26 trace incorrectly added the prior Monday search counts; distinguish new-week reset from same-week reuse."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Actual October26 candidate23 packet mislabeled a September24 video as current-window evidence; October12 reused the old packet without current-week discovery."
+        }
+      ]
+    },
+    {
+      "id": "portfolio-decisions",
+      "status": "disabled",
+      "title": "AI-owned low-turnover portfolio",
+      "raw_quote": "It doesn't need to go that often because these opinions are not going to change that often.",
+      "interpretation": "One non-trading research role supplies evidence and one terminal trading/risk role owns all trading decisions and orders. Base additions, trims and exits on supported investor theses and dated valuation/risk evidence. Retain holdings when their thesis survives; do not force a weekly rebalance or sell solely because no fresh interview appeared. Ignore drift under 3 percentage points unless a thesis or risk limit requires action. Validate fresh account, orders, positions, prices and resulting outcomes. Never place a dummy validation trade.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-29",
+        "context": "Weekly vidIQ investor-view strategy build"
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Initial strategy-scoped interpretation; risk and execution defaults explicitly disclosed."
+        },
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "User explicitly replaced the conservative candidate-veto/unleveraged interpretation with actionable aggressive investing and frequent leveraged-ETF use. Original wording retained as history."
+        }
+      ]
+    },
+    {
+      "id": "aggressive-risk-defaults",
+      "status": "disabled",
+      "title": "Aggressive cash-only defaults",
+      "raw_quote": "be agressive",
+      "interpretation": "Assistant-selected initial configuration for the aggressive objective: ordinary liquid US-listed stocks and unleveraged ETFs, preferably 6-10 holdings, no position above 20% of current account equity, at least 5% cash, no borrowing, shorting or options. High equity exposure is allowed when evidence supports it; hold cash rather than invent unsupported candidates. Use whole-share cash-bounded DAY limits with fee/open-order reservations and confirmed sale proceeds.",
+      "source": {
+        "kind": "assistant_default",
+        "date": "2026-10-29",
+        "context": "Weekly vidIQ investor-view strategy build"
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Initial strategy-scoped interpretation; risk and execution defaults explicitly disclosed."
+        },
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "User explicitly replaced the conservative candidate-veto/unleveraged interpretation with actionable aggressive investing and frequent leveraged-ETF use. Original wording retained as history."
+        }
+      ]
+    },
+    {
+      "id": "historical-evidence",
+      "status": "active",
+      "title": "Historical decisions use dated evidence",
+      "raw_quote": "please build that and backtest that for me.",
+      "interpretation": "Use evidence published no later than the simulated decision datetime. Distinguish upload, recording and purchase dates; do not inject the current chat's later recommendations into earlier decisions. Exclude known future information, disclose timestamp approximations and modern-model hindsight. Authentication failure, unknown history or no signal must not produce an invented trade or a claimed successful research backtest. Retrieval time is distinct from publication time: captions fetched after the simulated decision may support content published by that decision, with explicit historical-approximation disclosure. Do not reject all evidence merely because retrieval was later or original-vintage captions are unavailable. Stable facts already true before the decision, such as a fund inception date and daily multiple, may be confirmed in a modern issuer document with that limitation disclosed; exclude its later prices, returns, holdings and news. Known post-cutoff publications or genuinely later investment statements remain excluded.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-29",
+        "context": "Weekly vidIQ investor-view strategy build"
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Initial strategy-scoped interpretation; risk and execution defaults explicitly disclosed."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Actual October 26 local cycle incorrectly excluded pre-cutoff published videos solely because captions were fetched October 30. Clarify the already-authorized approximate historical use without admitting future publications or later claims."
+        }
+      ]
+    },
+    {
+      "id": "active-investor-portfolio",
+      "status": "active",
+      "title": "Active two-agent investor portfolio",
+      "raw_quote": "One agent that's gonna research all stuff and the other agent that's gonna actually trade, and this should actually fucking trade.",
+      "interpretation": "Exactly one non-trading researcher supplies bounded attributable evidence and exactly one terminal trading/risk agent decides and places orders. When cash or materially underinvested with eligible positive disclosed holdings, buys, recommendations or asset-class views, choose supported instruments and implement an initial allocation in that weekly cycle. A new purchase, independent full fair-value model or a preferred holding count is not an entry prerequisite. Reject a candidate only for identified contradictory evidence or actual execution/risk limits and assess other eligible candidates. Retain supported holdings, ignore drift under 3 percentage points unless thesis/risk requires action, and sell when the accepted case is invalidated. Refresh account, positions, complete open orders, exact prices, liquidity/history and risk; use whole-share marketable DAY limits, reserve fees/open orders, rely only on confirmed sale proceeds, and verify actual order status and resulting positions. Persist unresolved order/target intent and avoid duplicates. Never make a dummy validation trade. The trader returns a structured complete/pending/blocked execution report containing actual cash, exposure, actions and exact pending order IDs. Complete requires valid research and verified execution with no affordable supported top-up remaining. Persist the actual model outcome and tool results across attempts/restarts; unknown, rejected or partially filled orders must not be called filled. Missing final answers require reconciliation of broker order history before resubmission. Treat a valid ready research report with disclosed source gaps as usable even when an optional source tool failed. A failed run without a usable research report remains incomplete. The researcher supplies evidence and instrument mapping; the sole trader decides allocations and leverage.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-29",
+        "context": "Current user explicitly requested active investor-following execution and preserved researcher/trader separation."
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Current explicit aggressive repair mandate; numeric sizing/exposure defaults are assistant-selected and disclosed."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Align saved policy and prompts; separate attempts, pending execution and verified completion without Python investment decisions."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Repair observed historical-run failures: optional source gaps, actual attempt counting, premature cash-completion claim and researcher/trader ownership."
+        }
+      ]
+    },
+    {
+      "id": "aggressive-leveraged-portfolio",
+      "status": "active",
+      "title": "Aggressive portfolio with leveraged ETFs",
+      "raw_quote": "using things like leverage ETFs and stuff should be something that it does. Not always, but often.",
+      "interpretation": "Use leveraged ETFs often when attributable evidence supports a bullish or directional thesis, preferring 2x instruments; use unleveraged/lower exposure when leverage is not justified. Assistant-selected starting bounds: target full investment with no discretionary cash allocation or percentage reserve; reserve only actual fees, committed active-order cash, unavoidable whole-share rounding and execution requirements; prefer 3-8 holdings without a minimum-count gate; ordinary stock/unleveraged ETF and any individual leveraged ETF at most 25% of NAV each; aggregate leveraged sleeve at most 50% NAV and normally 30-50% in supported bullish regimes; any 3x sleeve at most 15% NAV; total absolute gross underlying exposure at most 170% NAV; direct plus single-stock leveraged exposure to one named company at most 40% NAV. Paid inverse ETFs require a supported bearish thesis and the same sleeve/gross limits. No margin borrowing, short sales or options. For leveraged ETFs, verify issuer, underlying, inception, daily multiple and actual historical ETF prices; never synthesize leveraged performance by multiplying underlying returns. Reassess leverage each Monday and trim/exit when its thesis weakens, regime turns adverse or limits are breached; stock exits follow thesis invalidation. Current valuation data informs sizing but absence of an independent full valuation model alone does not veto an otherwise eligible initial position. A source-backed positive broad-index view may support an appropriately sized 2x ETF without the investor endorsing leverage; the trader must weigh contrary evidence and portfolio risk. At each Monday review, calculate current marked weights against fresh NAV with an arithmetic tool, including when retaining all holdings. The ordinary 3-percentage-point target-drift tolerance never overrides these hard limits. Correct a breached limit before reporting completion; verified sell proceeds may fund supported redistribution. Ordinary stocks and unleveraged ETFs do not require a leveraged-instrument mechanics entry; still verify their identity, actual price availability and account eligibility. The researcher supplies evidence and mappings, never a binding portfolio eligibility decision.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-29",
+        "context": "User explicitly removed the old unleveraged restriction and requested aggressive frequent leverage; numerical limits are disclosed assistant-selected defaults."
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-29",
+          "author": "conversational_agent",
+          "reason": "Current explicit aggressive repair mandate; numeric sizing/exposure defaults are assistant-selected and disclosed."
+        },
+        {
+          "date": "2026-10-30",
+          "author": "conversational_agent",
+          "reason": "User explicitly instructed that the portfolio should not hold cash. Removed assistant-selected90-95%target and5%minimumcash while preserving all other exposure limits."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Repair observed historical-run failures: optional source gaps, actual attempt counting, premature cash-completion claim and researcher/trader ownership."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Actual local October 26 trace falsely reported complete with IWM at 25.16% NAV. Clarify hard-cap precedence over ordinary target drift; require tool-calculated current weights even for hold decisions."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Actual local October 19 run bought SSO but incorrectly blocked $7553.86 because it applied leveraged-fund issuer/inception checks to ordinary ETFs. Clarify the intended scope without relaxing exposure caps or price/account verification."
+        }
+      ]
+    },
+    {
+      "id": "full-investment",
+      "status": "active",
+      "title": "Use available capital without a cash allocation",
+      "raw_quote": "Is it using all the money in the portfolio to trade? It shouldn’t be holding cash",
+      "interpretation": "Target full investment of available portfolio capital at each Monday review, with no discretionary cash allocation or fixed percentage cash reserve. Reserve only actual estimated fees, cash committed to active orders, unavoidable whole-share rounding and execution requirements. Deploy residual spendable cash into supported new or retained holdings within unchanged position/exposure limits; the ordinary 3-percentage-point drift tolerance must not suppress deploying idle cash. Reconcile actual fills and cash and top up accepted supported holdings in the same cycle when an affordable whole-share order fits after fees. Reducing leverage or one candidate's weight should redistribute to other supported holdings or supported unleveraged expressions rather than cash. Missing evidence/prices, actual buying power/settlement limits, insufficient eligible holdings under unchanged caps or unresolved orders must be reported with remaining dollars and exact unmet constraint; never invent signals, duplicate orders, borrow or waive existing limits to manufacture full investment. Before declaring residual cash unavoidable, check cheaper faithful expressions or another supported holding, preserving all existing risk and exposure limits. An unaffordable top-up of one expensive ETF is not proof of full capital deployment; report the alternatives checked and concrete constraints.",
+      "source": {
+        "kind": "user_message",
+        "date": "2026-10-30",
+        "context": "User corrected the assistant-selected cash reserve and requested full portfolio use."
+      },
+      "created_by": "conversational_agent",
+      "last_edited_by": "conversational_agent",
+      "edit_history": [
+        {
+          "date": "2026-10-30",
+          "author": "conversational_agent",
+          "reason": "Record current explicit full-investment mandate and align trader prompt and active Rules."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Align saved policy and prompts; separate attempts, pending execution and verified completion without Python investment decisions."
+        },
+        {
+          "date": "2026-11-11",
+          "author": "conversational_agent",
+          "reason": "Repair observed historical-run failures: optional source gaps, actual attempt counting, premature cash-completion claim and researcher/trader ownership."
+        }
+      ]
+    }
+  ]
+}

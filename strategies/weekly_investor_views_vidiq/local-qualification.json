@@ -1,0 +1,225 @@
+{
+  "twoMonday": {
+    "proofContext": "local LumiBot run",
+    "sourceSha256": "1c6b774c29894236d7b9d19794b09c47fda6f706a7e8d5d6ec98529adc85a39a",
+    "rulesSha256": "e02f7c6d3fd9e42a082d970de6dfda896a44b395b08df33ffe2ff13d6fcead9b",
+    "filledOrders": 5,
+    "purchases": 9963.886817932129,
+    "sales": 0,
+    "fees": 9.963886817932128,
+    "initialCash": 10000,
+    "actualCash": 26.14929524994034,
+    "cashReconciles": true,
+    "positionLimitsPass": true,
+    "researchCountsPass": true,
+    "researchReviews": [
+      {
+        "week": "2026-10-19",
+        "actual": {
+          "search_attempts": 8,
+          "caption_requests": 3
+        },
+        "reported": {
+          "search_attempts": 8,
+          "caption_requests": 3
+        },
+        "retrievedCaptionTracks": 3,
+        "countsMatch": true,
+        "withinLimits": true
+      },
+      {
+        "week": "2026-10-26",
+        "actual": {
+          "search_attempts": 6,
+          "caption_requests": 0
+        },
+        "reported": {
+          "search_attempts": 6,
+          "caption_requests": 0
+        },
+        "retrievedCaptionTracks": 0,
+        "countsMatch": true,
+        "withinLimits": true
+      }
+    ],
+    "fullInvestmentPass": true,
+    "window": [
+      "2026-10-19",
+      "2026-10-26"
+    ],
+    "endingEquity": 9961.966159263611,
+    "modelCalls": 45,
+    "wallSeconds": 534.3254561670183,
+    "paidAiApiCostUsd": 0,
+    "realBrokerWrites": 0,
+    "affordabilityBasis": "Recorded historical reference marks, no executable ask available; fee assumption0.1% per side.",
+    "exposureReviews": [
+      {
+        "datetime": "2026-10-19T10:00:00-04:00",
+        "leveragedSleeveWeight": 0.24461372928315372,
+        "threeTimesSleeveWeight": 0,
+        "grossUnderlyingExposureWeight": 1.241996191673311,
+        "directPlusSingleCompanyLeveragedMSFTWeight": 0.21282406721053176,
+        "passes": true,
+        "scope": "Direct/single-stock leveraged company cap; broad-index constituent overlap is not quantified."
+      },
+      {
+        "datetime": "2026-10-26T10:00:00-04:00",
+        "leveragedSleeveWeight": 0.24452079401963805,
+        "threeTimesSleeveWeight": 0,
+        "grossUnderlyingExposureWeight": 1.2418754559435918,
+        "directPlusSingleCompanyLeveragedMSFTWeight": 0.21201717353959337,
+        "passes": true,
+        "scope": "Direct/single-stock leveraged company cap; broad-index constituent overlap is not quantified."
+      }
+    ],
+    "researchDateReview": "Both Mondays performed current-window discovery; September24 Thiel interview is qualifying on October19 and explicitly background only on October26. Raw source snippets are discovery only; complete cached captions retain original October30 retrieval.",
+    "exposureLimitsPass": true
+  },
+  "october": {
+    "proofContext": "local LumiBot run",
+    "sourceSha256": "1c6b774c29894236d7b9d19794b09c47fda6f706a7e8d5d6ec98529adc85a39a",
+    "rulesSha256": "e02f7c6d3fd9e42a082d970de6dfda896a44b395b08df33ffe2ff13d6fcead9b",
+    "filledOrders": 7,
+    "purchases": 10017.844039916992,
+    "sales": 70.98500061035156,
+    "fees": 10.088829040527344,
+    "initialCash": 10000,
+    "actualCash": 43.05213165283331,
+    "cashReconciles": true,
+    "positionLimitsPass": true,
+    "researchCountsPass": true,
+    "researchReviews": [
+      {
+        "week": "2026-10-05",
+        "actual": {
+          "search_attempts": 6,
+          "caption_requests": 3
+        },
+        "reported": {
+          "search_attempts": 6,
+          "caption_requests": 3
+        },
+        "retrievedCaptionTracks": 1,
+        "countsMatch": true,
+        "withinLimits": true
+      },
+      {
+        "week": "2026-10-12",
+        "actual": {
+          "search_attempts": 6,
+          "caption_requests": 3
+        },
+        "reported": {
+          "search_attempts": 6,
+          "caption_requests": 3
+        },
+        "retrievedCaptionTracks": 3,
+        "countsMatch": true,
+        "withinLimits": true
+      },
+      {
+        "week": "2026-10-19",
+        "actual": {
+          "search_attempts": 6,
+          "caption_requests": 3
+        },
+        "reported": {
+          "search_attempts": 6,
+          "caption_requests": 3
+        },
+        "retrievedCaptionTracks": 0,
+        "countsMatch": true,
+        "withinLimits": true
+      },
+      {
+        "week": "2026-10-26",
+        "actual": {
+          "search_attempts": 6,
+          "caption_requests": 2
+        },
+        "reported": {
+          "search_attempts": 6,
+          "caption_requests": 2
+        },
+        "retrievedCaptionTracks": 0,
+        "countsMatch": true,
+        "withinLimits": true
+      }
+    ],
+    "fullInvestmentPass": true,
+    "window": [
+      "2026-10-01",
+      "2026-10-30"
+    ],
+    "endingEquity": 9353.88243865967,
+    "returnPercent": -6.461175613403302,
+    "modelCalls": 92,
+    "wallSeconds": 981.4027787079976,
+    "paidAiApiCostUsd": 0,
+    "realBrokerWrites": 0,
+    "affordabilityBasis": "Recorded historical reference marks; no executable ask available. Fee assumption 0.1% per side. No affordable eligible held-share top-up at completed reviews; this does not establish the cheapest possible new instrument across all ETFs.",
+    "exposureReviews": [
+      {
+        "datetime": "2026-10-05T10:00:00-04:00",
+        "leveragedSleeveWeight": 0,
+        "threeTimesSleeveWeight": 0,
+        "grossUnderlyingExposureWeight": 0.9956036448135375,
+        "maximumDirectCompanyWeight": 0.24688757123745897,
+        "maximumPositionWeight": 0.24688757123745897,
+        "passes": true,
+        "scope": "Direct and single-stock leveraged company exposure; broad-index constituent overlap not quantified."
+      },
+      {
+        "datetime": "2026-10-12T10:00:00-04:00",
+        "leveragedSleeveWeight": 0,
+        "threeTimesSleeveWeight": 0,
+        "grossUnderlyingExposureWeight": 0.9958131173999356,
+        "maximumDirectCompanyWeight": 0.24852221458942275,
+        "maximumPositionWeight": 0.24852221458942275,
+        "passes": true,
+        "scope": "Direct and single-stock leveraged company exposure; broad-index constituent overlap not quantified."
+      },
+      {
+        "datetime": "2026-10-19T10:00:00-04:00",
+        "leveragedSleeveWeight": 0,
+        "threeTimesSleeveWeight": 0,
+        "grossUnderlyingExposureWeight": 0.9957129156978904,
+        "maximumDirectCompanyWeight": 0.24839361716362834,
+        "maximumPositionWeight": 0.24839361716362834,
+        "passes": true,
+        "scope": "Direct and single-stock leveraged company exposure; broad-index constituent overlap not quantified."
+      },
+      {
+        "datetime": "2026-10-26T10:00:00-04:00",
+        "leveragedSleeveWeight": 0,
+        "threeTimesSleeveWeight": 0,
+        "grossUnderlyingExposureWeight": 0.9955763944447648,
+        "maximumDirectCompanyWeight": 0.2413226990670926,
+        "maximumPositionWeight": 0.2413226990670926,
+        "passes": true,
+        "scope": "Direct and single-stock leveraged company exposure; broad-index constituent overlap not quantified."
+      }
+    ],
+    "exposureLimitsPass": true,
+    "researchDateReview": "All four Mondays performed new current-window discovery. September 24 Thiel publication is background only on October 26; October 6 Dalio and September 29 Ackman are current. Complete available captions retain original October 30 retrieval and disclosed historical approximation; source coverage remains partial."
+  },
+  "rebalance": {
+    "proofContext": "local LumiBot run",
+    "sourceSha256": "1c6b774c29894236d7b9d19794b09c47fda6f706a7e8d5d6ec98529adc85a39a",
+    "rulesSha256": "e02f7c6d3fd9e42a082d970de6dfda896a44b395b08df33ffe2ff13d6fcead9b",
+    "filledOrders": 2,
+    "purchases": 263.70540046691895,
+    "sales": 276.864990234375,
+    "fees": 0.540570390701294,
+    "initialCash": 7.72990854644831,
+    "actualCash": 20.348927923203053,
+    "cashReconciles": true,
+    "positionLimitsPass": true
+  },
+  "scope": "Local LumiBot simulations. No hosted BotSpot backtest, live broker fill or original-vintage research claim. Historical bars are recorded; research replays genuine later-retrieved provider responses, with partial coverage and model hindsight. Raw captions are private. No profitability claim.",
+  "sdkSourceCommit": "8ec8b9280a036f9d4049d2b58a5462f958f36cde",
+  "minimumRuntimeVersion": "4.6.52",
+  "qualificationDate": "2026-11-11",
+  "journeys": "Follow-up after Marketplace publication, not qualified by these strategy runs."
+}
