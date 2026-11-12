@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "path": "tests/test_weekly_cycle.py::test_incomplete_week_can_resume",
+      "reason": "an incomplete attempt must not permanently skip a review"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_monday_clock_preserves_the_review_window",
+      "reason": "calls must stay in the Monday window"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_completed_week_does_not_repeat",
+      "reason": "a completed review must not trade again"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_pending_execution_survives_restart_and_reuses_the_cutoff",
+      "reason": "retained pending IDs and research cutoff must survive"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_blocked_week_stops_polling_without_claiming_completion",
+      "reason": "blocked is not completed"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_failed_research_is_handed_to_the_trader_without_false_completion",
+      "reason": "failed research cannot falsely complete allocation"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_missing_structured_answer_does_not_claim_completion",
+      "reason": "a missing execution answer is not success"
+    },
+    {
+      "path": "tests/test_weekly_cycle.py::test_reviewed_research_with_source_gaps_can_finish",
+      "reason": "one unavailable source must not veto usable reviewed evidence"
+    }
+  ]
+}
