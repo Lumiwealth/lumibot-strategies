@@ -68,8 +68,9 @@ A separate recorded overweight-state continuation sold one IWM share, confirmed
 its fill and bought nine SCHB shares. Fees and cash reconciled; ending cash was
 $20.3489 and all positions were within the cap. That is a controlled trader check,
 not an additional full weekly cycle, customer journey or live broker proof.
-Build and edit journey qualification is separate follow-up work after Marketplace
-publication; it is not historical trading or performance evidence.
+Build and edit journeys execute strategies saved by the real BotSpot Agent and
+are qualified before Marketplace publication. They are separate from historical
+trading or performance evidence.
 
 Prices in the historical strategy study are real recorded five-minute bars.
 Research replays genuine vidIQ responses originally retrieved October 30 with
